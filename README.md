@@ -1,0 +1,1 @@
+ExoRepo provides syntactic sugar for Pharo's Iceberg to support repositories beyond GitLab, GitHub and Bitbucket.
