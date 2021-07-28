@@ -3,7 +3,11 @@
 ExoRepo provides syntactic sugar for Pharo's Iceberg to support repositories beyond GitLab, GitHub and 
 Bitbucket.
 
-To install this from Gitea, run from a playground:
+## Installation
+
+### from Gitea 
+
+Run from a playground:
 
 ```smalltalk
   location := FileLocator localDirectory / 'iceberg' / 'Offray' / 'ExoRepo'.
@@ -18,3 +22,24 @@ To install this from Gitea, run from a playground:
       baseline: 'ExoRepo';
       load
 ```
+
+### from GitHub
+
+Run from a playground:
+
+```smalltalk
+Metacello new
+ repository: 'github://offray/ExoRepo/';
+ baseline: 'ExoRepo';
+ load.
+ ```
+
+ ## Usage
+
+ To install the repository <https://code.tupale.co/Offray/TiddlyWikiPharo> run:
+
+ ```smalltalk
+ ExoRepo new
+    repository: 'https://code.tupale.co/Offray/TiddlyWikiPharo';
+    load.
+ ```
